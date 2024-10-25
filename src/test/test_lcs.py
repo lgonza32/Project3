@@ -5,7 +5,10 @@ Testing get_lcs function in lcs.py
 TODO: test for proper lcs length
 """
 def test_get_lcs():
-    return 0
+    s1 = "mangoes"
+    s2 = "mementos"
+    lcs, test1_lcs_length = get_lcs(s1, s2)
+    assert test1_lcs_length == 4
 
 """
 Testing lcs_string function in lcs.py
