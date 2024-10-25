@@ -1,0 +1,36 @@
+# Ignore Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python package folders
+*.egg-info/
+.eggs/
+
+# Ignore test reports
+*.log
+*.out
+*.err
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code workspace settings
+.vscode/
+
+# Ignore environment variables and secrets
+.env
+.secret
+
+# Ignore compiled libraries
+*.so
+*.dylib
+*.dll
