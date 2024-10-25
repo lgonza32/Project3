@@ -1,4 +1,4 @@
-from src.main.lcs import *
+from main.lcs import *
 
 """
 Testing get_lcs function in lcs.py
