@@ -18,12 +18,12 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
     
     lcs = [[0] * (n_2 + 1) for _ in range(n_1 + 1)]
 
-    # Base case: If s1 is empty, LCS with any substring of s2 is 0
-    for j in reversed(range(n_2)):
-        lcs[n_1 - 1][j] = 0
     # Base case: If s2 is empty, LCS with any substring of s1 is 0
     for i in reversed(range(n_1)):
         lcs[i][n_2 - 1] = 0
+    # Base case: If s1 is empty, LCS with any substring of s2 is 0
+    for j in reversed(range(n_2)):
+        lcs[n_1 - 1][j] = 0
 
     # Traverse backwards to fill LCS table
     for i in reversed(range(n_1)):
