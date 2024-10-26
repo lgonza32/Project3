@@ -24,7 +24,7 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
     for i in reversed(range(n_1)):
         lcs[i][n_2 - 1] = 0
 
-    # Bottom-up fill LCS table
+    # Traverse backwards to fill LCS table
     for i in reversed(range(n_1)):
         for j in reversed(range(n_2)):
             if s1[i] == s2[j]:
