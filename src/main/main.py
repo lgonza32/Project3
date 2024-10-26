@@ -43,10 +43,11 @@ def main():
     duration_ns = end_time - start_time
     
     # Results
-    print(f"s1: {s1}")
-    print(f"s2: {s2}")
-    print(f"LCS length: {lcs_length}")
-    print(f"Longest Common Subsequence: {lcs_str}")
+    # Comment out the all results except ns for project
+    # print(f"s1: {s1}")
+    # print(f"s2: {s2}")
+    # print(f"LCS length: {lcs_length}")
+    # print(f"Longest Common Subsequence: {lcs_str}")
     print(f"Time (ns): {duration_ns}")
     
 # Run the main function
