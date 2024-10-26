@@ -3,6 +3,13 @@ import string
 import time
 from lcs import *
 
+"""
+Description:
+This program provides functions to calculate the Longest Common Subsequence (LCS) of two strings.
+
+Group: 17
+Date: 10-27-2024
+"""
 def generate_random_string(n):
     """
     Generates a random string of the given length using 
@@ -40,15 +47,15 @@ def main():
     end_time = time.time_ns()  # Get the end time in nanoseconds
     
     # Calculate the elapsed time in nanoseconds
-    duration_ns = end_time - start_time
+    experimental_results = end_time - start_time
     
     # Results
     # Comment out the all results except ns for project
-    # print(f"s1: {s1}")
-    # print(f"s2: {s2}")
-    # print(f"LCS length: {lcs_length}")
-    # print(f"Longest Common Subsequence: {lcs_str}")
-    print(f"Time (ns): {duration_ns}")
+    print(f"s1: {s1}")
+    print(f"s2: {s2}")
+    print(f"LCS length: {lcs_length}")
+    print(f"Longest Common Subsequence: {lcs_str}")
+    print(f"Experimental Results (ns): {experimental_results}")
     
 # Run the main function
 if __name__ == "__main__":
