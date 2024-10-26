@@ -30,16 +30,17 @@ def main():
     the Longest Common Sequence (LCS) algorithm between two strings.
     This function also measure the time it takes to run the algorithm
     in nanoseconds (ns).
+    Refer to README for expected output.
     """
     # s1 = "mangoes"
     # s2 = "mementos"
     # Accept two strings as input from the user
-    n1 = int(input("Enter the size (n1) of s1: "))
-    n2 = int(input("Enter the size (n2) of s2: "))
+    n_1 = int(input("Enter the size (n1) of s1: "))
+    n_2 = int(input("Enter the size (n2) of s2: "))
     
     # Generate random strings of n size
-    s1 = generate_random_string(n1)
-    s2 = generate_random_string(n2)
+    s1 = generate_random_string(n_1)
+    s2 = generate_random_string(n_2)
     
     start_time = time.time_ns()  # Get the current time in nanoseconds
     lcs, lcs_length = get_lcs(s1, s2)
@@ -51,10 +52,10 @@ def main():
     
     # Results
     # Comment out the all results except ns for project
-    print(f"s1: {s1}")
-    print(f"s2: {s2}")
-    print(f"LCS length: {lcs_length}")
-    print(f"Longest Common Subsequence: {lcs_str}")
+    # print(f"s1: {s1}")
+    # print(f"s2: {s2}")
+    # print(f"LCS length: {lcs_length}")
+    # print(f"Longest Common Subsequence: {lcs_str}")
     print(f"Experimental Results (ns): {experimental_results}")
     
 # Run the main function
