@@ -37,7 +37,6 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
     # Return the LCS table and the LCS length
     return lcs, lcs[0][0]
 
-
 def lcs_string(s1, s2, lcs):
     n_1, n_2 = len(s1), len(s2)
     i, j = 0, 0
@@ -53,5 +52,5 @@ def lcs_string(s1, s2, lcs):
         else:
             j += 1  # Move right
 
-    # Join the list into a string and return
+    # Join the list into a string
     return ''.join(lcs_string)
