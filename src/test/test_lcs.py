@@ -1,6 +1,7 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+# Use PYTHONPATH=src pytest src/test/test_lcs.py in terminal if VSCode test does not work
 
 from main.lcs import *
 
