@@ -14,7 +14,6 @@ def test_get_lcs():
     
     s3, s4 = "abcdef", "abcdef"
     lcs, test2_lcs_length = get_lcs(s3, s4)
-
     
     s5, s6 = "", ""
     lcs, test3_lcs_length = get_lcs(s5, s6)
@@ -33,10 +32,6 @@ def test_get_lcs():
         test5_lcs_length == 1 # 5
     ]), "a test has failed"
 
-"""
-Testing lcs_string function in lcs.py
-TODO: test for proper lcs output
-"""
 def test_lcs_string():
     """
     Testing lcs_string function in lcs.py.
