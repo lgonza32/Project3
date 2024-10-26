@@ -1,16 +1,16 @@
 def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
     """
-    Calculates the length and table of the Longest Common Subsequence (LCS)
-    between two strings using dynamic programming.
+    This function calculates the length and table of the Longest Common
+    Subsequence (LCS) between two strings using dynamic programming.
 
     Args:
-        s1 (string): The first input string
-        s2 (string): The second input string
+        s1 (string): The first input string.
+        s2 (string): The second input string.
 
     Returns:
         Tuple: 
-        - lcs (2D Array): A 2D list (table) that contains integer values 
-          representing the length of the LCS at each cell.
+        - lcs (2D Array): A 2D list (table) that contains integer  
+          values representing the length of the LCS at each cell.
         - lcs[0][0] (int): Length of the LCS
     """
     n_1, n_2 = len(s1), len(s2)
@@ -38,6 +38,18 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
     return lcs, lcs[0][0]
 
 def lcs_string(s1, s2, lcs):
+    """
+    This function traverses backwards through the LCS table to
+    build and return the LCS as a string.
+
+    Args:
+        s1 (string): The first input string.
+        s2 (string): The second input string.
+        lcs (2D Array): A 2D list (table) that contains integer values.
+
+    Returns:
+        string: The LCS of s1 and s2 as a string.
+    """
     n_1, n_2 = len(s1), len(s2)
     i, j = 0, 0
     lcs_string = []
