@@ -40,7 +40,7 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
 def lcs_string(s1, s2, lcs):
     """
     This function traverses backwards through the LCS table to
-    build and return the LCS as a string.
+    return the LCS as a string.
 
     Args:
         s1 (string): The first input string.
