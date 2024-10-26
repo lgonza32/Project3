@@ -39,5 +39,19 @@ def get_lcs(s1, s2) -> tuple[list[list[int]], int]:
 
 
 def lcs_string(s1, s2, lcs):
-    # TODO: lcs chars to string
-    return 0
+    n_1, n_2 = len(s1), len(s2)
+    i, j = 0, 0
+    lcs_string = []
+    
+    while i < n_1 and j < n_2:
+        if s1[i] == s2[j]:  # Characters match
+            lcs_string.append(s1[i])  # Add character to the LCS
+            i += 1
+            j += 1  # Move diagonally
+        elif lcs[i + 1][j] >= lcs[i][j + 1]:
+            i += 1  # Move down
+        else:
+            j += 1  # Move right
+
+    # Join the list into a string and return
+    return ''.join(lcs_string)
