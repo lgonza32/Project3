@@ -3,6 +3,13 @@ import string
 import time
 from lcs import *
 
+"""
+Description:
+This program provides functions to calculate the Longest Common Subsequence (LCS) of two strings.
+
+Group: 17
+Date: 10-27-2024
+"""
 def generate_random_string(n):
     """
     Generates a random string of the given length using 
