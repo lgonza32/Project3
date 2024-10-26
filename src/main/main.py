@@ -5,12 +5,13 @@ from lcs import *
 
 """
 Description:
-This program provides functions to calculate the Longest Common Subsequence (LCS) of two strings.
+This program provides functions to calculate the Longest Common Subsequence (LCS) 
+of two strings.
 
 Group: 17
 Date: 10-27-2024
 """
-def generate_random_string(n):
+def generate_random_string(n) -> str:
     """
     Generates a random string of the given length using 
     lowercase letters and digits.
@@ -47,7 +48,7 @@ def main():
     lcs_str = lcs_string(s1, s2, lcs)
     end_time = time.time_ns()  # Get the end time in nanoseconds
     
-    # Calculate the elapsed time in nanoseconds
+    # Time in nanoseconds
     experimental_results = end_time - start_time
     
     # Results
